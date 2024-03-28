@@ -20,7 +20,7 @@ public class Monster : MonoBehaviour
     {
         currentHealth = maxHealth;
         // Find the magician object (assuming there's only one)
-        target = GameObject.FindGameObjectWithTag(StringConstants.Magican).transform;
+        target = GameObject.FindGameObjectWithTag(StringConstants.Magician).transform;
         area = GameObject.FindGameObjectWithTag(StringConstants.Area);
         cubeBounds = area.GetComponent<Collider>().bounds;
        
@@ -28,7 +28,7 @@ public class Monster : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag.Contains(StringConstants.Magican)) // Check for collision with monster tag
+        if (collision.gameObject.tag.Contains(StringConstants.Magician)) // Check for collision with monster tag
         {
             collision.gameObject.GetComponent<Magician>().TakeDamage(attackDamage); // Deal damage to the monster
         }
@@ -40,7 +40,7 @@ public class Monster : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag.Contains(StringConstants.Magican)) // Check for collision with monster tag
+        if (collision.gameObject.tag.Contains(StringConstants.Magician)) // Check for collision with monster tag
         {
             collision.gameObject.GetComponent<Magician>().TakeDamage(attackDamage); // Deal damage to the monster
         }

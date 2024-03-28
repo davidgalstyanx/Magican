@@ -1451,8 +1451,8 @@ GameObject:
   - component: {fileID: 2765245698000669118}
   - component: {fileID: -3896935903041993508}
   m_Layer: 0
-  m_Name: Magican
-  m_TagString: Magican
+  m_Name: Magician
+  m_TagString: Magician
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Monster
-  - Magican
   - Spell
   - Cube
   - Area
+  - Magician
   layers:
   - Default
   - TransparentFX
